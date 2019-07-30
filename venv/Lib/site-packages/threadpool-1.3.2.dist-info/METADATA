@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: threadpool
+Version: 1.3.2
+Summary: Easy to use object-oriented thread pool framework.
+Home-page: http://chrisarndt.de/projects/threadpool/
+Author: Christopher Arndt
+Author-email: chris@chrisarndt.de
+License: MIT license
+Download-URL: http://chrisarndt.de/projects/threadpool/download/
+Keywords: threads,design pattern,thread pool
+Platform: POSIX
+Platform: Windows
+Platform: MacOS X
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+.. warning::    This module is **OBSOLETE** and is only provided on PyPI to support old    projects that still use it. Please **DO NOT USE IT FOR NEW PROJECTS!**    Use modern alternatives like the `multiprocessing <https://docs.python.org/3/library/multiprocessing.html>`_    module in the standard library or even an asynchroneous approach with    `asyncio <_asyncio: https://docs.python.org/3/library/asyncio.html>`_.A thread pool is an object that maintains a pool of worker threads to performtime consuming operations in parallel. It assigns jobs to the threadsby putting them in a work request queue, where they are picked up by thenext available thread. This then performs the requested operation in thebackground and puts the results in another queue.The thread pool object can then collect the results from all threads fromthis queue as soon as they become available or after all threads havefinished their work. It's also possible, to define callbacks to handleeach result as it comes in... note::    This module is regarded as an extended example, not as a finished product.    Feel free to adapt it too your needs.
+
+
