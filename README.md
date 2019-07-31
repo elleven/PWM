@@ -27,3 +27,7 @@
 
 PWM dashboard
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/dashboard.png?raw=true)
+
+PWM 报警规则
+![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/rules1.png?raw=true)
+![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/rules2.png?raw=true)
