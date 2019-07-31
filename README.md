@@ -55,5 +55,11 @@ python-2.7.5 Django-1.11.22 djangorestframework-3.9.4 node-v10.15.0 npm-6.4.1
   前端代码地址
   [PWM-web](https://github.com/yanchao3/PWM-web)
   
+  部署需要安装node npm
+  注： 在启动服务之前，cd PWM-web && grep -R 10.50.182.65 \*, 把文件中的ip地址修改成你后端服务的ip地址
+  npm install -g @vue/cli
+  cd PWM-web/jy_cmdb_vue
+  npm run dev
+  
   
   
