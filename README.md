@@ -46,9 +46,9 @@ python-2.7.5 Django-1.11.22 djangorestframework-3.9.4 node-v10.15.0 npm-6.4.1
 
 1. 后端安装
   cd PWM/
-  pip install -r requirements.txt
-  python manage.py makemigrations
-  python manage.py migrate
+  pip install -r requirements.txt  
+  python manage.py makemigrations  
+  python manage.py migrate  
   python manage.py runserver 0.0.0.0:888
   
 2. 前端安装
@@ -56,10 +56,10 @@ python-2.7.5 Django-1.11.22 djangorestframework-3.9.4 node-v10.15.0 npm-6.4.1
   [PWM-web](https://github.com/yanchao3/PWM-web)
   
   部署需要安装node npm
-  注： 在启动服务之前，cd PWM-web && grep -R 10.50.182.65 \*, 把文件中的ip地址修改成你后端服务的ip地址
-  npm install -g @vue/cli
-  cd PWM-web/jy_cmdb_vue
-  npm run dev
+  注： 在启动服务之前，cd PWM-web && grep -R 10.50.182.65 \*, 把文件中的ip地址修改成你后端服务的ip地址  
+  npm install -g @vue/cli  
+  cd PWM-web/jy_cmdb_vue  
+  npm run dev  
   
   
   
