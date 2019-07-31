@@ -1,4 +1,14 @@
-# PWM 是一个管理prometheus的平台
+# PWM 是一个管理prometheus alertmanager的统一管理平台
+
+包含功能:
+  1. 管理prometheus的配置
+  2. 管理exporter
+  3. 管理报警规则的配置
+  4. 支持报警分组
+  5. 支持邮件 短信 企业微信报警
+  6. 配置之间用服务树方式展现
+  7. 报警历史记录查询
+  8. 报警静默配置
 
 此平台优点:
   1. 支持用户组管理
@@ -8,6 +18,10 @@
   5. 减少操作人员学习成本
   6. 支持记录展示报警历史
   7. 操作管理方便 快捷
+  
+此平台架构图：（图中画红框的为此平台所需架构）
+  django framework + vue-cli + consul + confd + prometheus + alertmanager
+  其中exporter会以服务的方式注册到consul中，confd服务管理prometheus rules alertmanager的配置文件
 
 PWM dashboard
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/dashboard.png?raw=true)
