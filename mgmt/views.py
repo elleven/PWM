@@ -92,7 +92,7 @@ class FirstLogin(APIView):
         if len(user_obj) == 0:
             role_objs = permission_init()
             result.data = role_objs
-            # print "rrrrrrrrrr",result.data
+            print "rrrrrrrrrr",result.data
             result.status = 1
         else:
             result.status = 2

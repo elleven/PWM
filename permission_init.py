@@ -12,17 +12,27 @@ from mgmt.models import Menu, Permission, Role, UserInfo
 
 
 def permission_init():
-    # print("==================================here")
+    print("==================================here")
     try:
         menu_list = [
 
-            Menu(id=1, alias='首页', icon='glyphicon glyphicon-dashboard'),
+            Menu(id=1, alias='系统管理', icon='glyphicon glyphicon-dashboard'),
+            Menu(id=2, alias='监控', icon='glyphicon glyphicon-dashboard'),
         ]
 
         Menu.objects.bulk_create(menu_list)
 
         permission_list = [
-            Permission(id=1, alias='首页', name='/dashboard/', icon='glyphicon glyphicon-dashboard', menu_id=1),
+            Permission(id=1, alias='用户管理', name='user-manager', icon='', menu_id=1),
+            Permission(id=2, alias='用户组管理', name='user-group-manager', icon='', menu_id=1),
+            Permission(id=3, alias='权限管理', name='permission-manager', icon='', menu_id=1),
+            Permission(id=4, alias='菜单管理', name='menu-manager', icon='', menu_id=1),
+            Permission(id=5, alias='监控首页', name='monitor-dashboard', icon='', menu_id=2),
+            Permission(id=6, alias='Job管理', name='job-manager', icon='', menu_id=2),
+            Permission(id=7, alias='监控数据源管理', name='target-manager', icon='', menu_id=2),
+            Permission(id=8, alias='应用集管理', name='application-manager', icon='', menu_id=2),
+            Permission(id=9, alias='规则管理', name='rule-manager', icon='', menu_id=2),
+            Permission(id=10, alias='报警静默管理', name='monitor-silence', icon='', menu_id=2),
 
         ]
 
