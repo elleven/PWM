@@ -40,3 +40,20 @@ PWM 静默管理
 ![image text](https://github.com/yanchao3/PWM/blob/master/img-folder/silence.png?raw=true)
 ![image text](https://github.com/yanchao3/PWM/blob/master/img-folder/silence2.png?raw=true)
 
+# 安装部署
+
+python-2.7.5 Django-1.11.22 djangorestframework-3.9.4 node-v10.15.0 npm-6.4.1
+
+1. 后端安装
+  cd PWM/
+  pip install -r requirements.txt
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py runserver 0.0.0.0:888
+  
+2. 前端安装
+  前端代码地址
+  [PWM-web](https://github.com/yanchao3/PWM-web)
+  
+  
+  
