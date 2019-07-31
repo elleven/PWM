@@ -22,6 +22,8 @@
 此平台架构图：（图中画红框的为此平台所需架构）
   django framework + vue-cli + consul + confd + prometheus + alertmanager
   其中exporter会以服务的方式注册到consul中，confd服务管理prometheus rules alertmanager的配置文件
+![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/prometheus.png?raw=true)
+  
 
 PWM dashboard
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/dashboard.png?raw=true)
