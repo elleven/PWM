@@ -24,6 +24,8 @@
   其中exporter会以服务的方式注册到consul中，confd服务管理prometheus rules alertmanager的配置文件
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/prometheus.png?raw=true)
   
+PWM 功能列表
+![image text](https://github.com/yanchao3/PWM/blob/master/img-folder/pwm2.png?raw=true)
 
 PWM dashboard
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/dashboard.png?raw=true)
@@ -31,3 +33,8 @@ PWM dashboard
 PWM 报警规则
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/rules1.png?raw=true)
 ![Image text](https://github.com/yanchao3/PWM/blob/master/img-folder/rules2.png?raw=true)
+
+PWM 静默管理
+![image text](https://github.com/yanchao3/PWM/blob/master/img-folder/silence.png?raw=true)
+![image text](https://github.com/yanchao3/PWM/blob/master/img-folder/silence2.png?raw=true)
+
